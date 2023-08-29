@@ -1,0 +1,23 @@
+<app-navbar>
+
+</app-navbar>
+
+<div class="container mt-3">
+    <h3>Transaction History</h3>
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <th>Transaction Type</th>
+          <th>Account Type </th>
+          <th>Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let transaction of transactions">
+          <td>{{ transaction.transactionType }}</td>
+          <td>{{ transaction.accountType}}</td>
+          <td>{{ transaction.amount }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
